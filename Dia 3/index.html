@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de decisão</title>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="texto">Qual área você deseja seguir?</h1>
+    <button id="btn1" onclick="perguntaUm(1)">Front-end</button>
+    <button id="btn2" onclick="perguntaUm(2)">Back-end</button>
+    <span id="vazio"></span>
+    <input type="text" id="tecnologias" style="display: none;"><br>
+    <button id="ok" onclick="resposta('sim')" style="display: none;">Ok</button>
+    <button id="cancel" onclick="resposta('nao')" style="display: none;">Cancelar</button>
+    <h2 style="display: none;">tecnologias para aprender:</h2>
+    <span id="listaTecnologias"></span>
+</body>
+</html>
